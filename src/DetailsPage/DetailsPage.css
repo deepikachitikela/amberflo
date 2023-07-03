@@ -1,0 +1,14 @@
+.detailsPageContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detailsTable{
+    width: 60%;
+}
+.meterUpdateBtn{
+    width: 80px;
+    height: 20px;
+    margin: 10px;
+}

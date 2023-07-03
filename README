@@ -1,0 +1,36 @@
+# Title
+
+A brief description of your project.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Features](#features)
+
+## Installation
+
+```shell
+$ git clone https://github.com/your-username/your-repo.git
+$ cd your-repo
+$ npm install
+$ cp .env.example .env
+$ npm run dev
+```
+
+## Features
+
+● Landing Page
+○ Display a table of all available “meters” and their values.
+○ A user can sort the table by any column by either
+ascending or descending order.
+○ A user should be able to create new meters, and these new meters which appear on
+the landing page table.
+
+● Meter Details Page
+○ When a user clicks on a meter row from the landing page table, redirect them to a meter
+details page.
+○ From the details page, a user should have the ability to edit the meter.
+■ Note: The initial meters (that exist before you create any meters) are
+read-only and are for example purposes (API will not allow you to edit). You
+can only edit meters that you have newly created.
+

@@ -1,0 +1,42 @@
+.metersForm{
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    border-collapse: collapse;
+    flex-direction: column;
+    align-items: center;
+}
+.meterFormRowHorizontal{
+    display: flex;
+    margin: 5px;
+}
+.meterFormRowVertical{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.meterFormData{
+    white-space: nowrap;
+}
+.meterFormRowVertical .meterFormData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.meterFormLabel {
+    margin: 0 5px;
+}
+.meterFormItemDataInput{
+    width: 145px;
+}
+select.meterFormItemDataInput{
+    width: 153px;
+}
+.meterFormItemDataInput#api_name{
+text-transform: uppercase;
+}
+.meterFormBtn{
+    width: 120px;
+    height: 20px;
+    margin: 10px;
+}

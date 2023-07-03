@@ -8,7 +8,14 @@ const DetailsPage = () => {
   return (
     <div className="detailsPageContainer">
       <h1>Details Page</h1>
-  {<MetersForm classForRows="meterFormRowVertical" item={item} btnName="Update Meter" update={true}/>}
+      {
+        <MetersForm
+          classForRows="meterFormRowVertical"
+          item={item}
+          btnName="Update Meter"
+          update={true}
+        />
+      }
     </div>
   );
 };

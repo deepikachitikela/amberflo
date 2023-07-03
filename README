@@ -10,10 +10,9 @@ A brief description of your project.
 ## Installation
 
 ```shell
-$ git clone https://github.com/your-username/your-repo.git
-$ cd your-repo
+$ git clone https://github.com/deepikachitikela/amberflo.git
 $ npm install
-$ cp .env.example .env
+$ npm run build
 $ npm run dev
 ```
 

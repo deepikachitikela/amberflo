@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MeterTable from "./MeterTable/MeterTable";
+import LandingPage from "./LandingPage/LandingPage";
+
 import DetailsPage from "./DetailsPage/DetailsPage";
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/details/:id" element={<DetailsPage />} />
-        <Route path="/" element={<MeterTable />} />
+        <Route path="/" element={<LandingPage />} />
       </Routes>
     </BrowserRouter>
   );

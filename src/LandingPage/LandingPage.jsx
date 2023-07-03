@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./MeterTable.css";
+import "./LandingPage.css";
 import MetersForm from "../MetersForm/MetersForm";
 
-const MeterTable = () => {
+const LandingPage = () => {
   let [meters, setMeters] = useState([]);
   const [sortOrder, setSortOrder] = useState({ field: null, order: "asc" });
   const navigateTo = useNavigate();
@@ -12,6 +12,8 @@ const MeterTable = () => {
   const handleRowClick = (item) => {
     navigateTo(`/details/${item.api_name}`, { state: { item } });
   };
+
+  // Function to handle sort on each field
   const handleSort = (field) => {
     let order = "asc";
     if (sortOrder.field === field && sortOrder.order === "asc") {
@@ -30,6 +32,7 @@ const MeterTable = () => {
 
     setMeters(sortedData);
   };
+  // Function to return sort icon on click
   const getSortIcon = (field) => {
     if (sortOrder.field === field) {
       return sortOrder.order === "asc" ? (
@@ -40,7 +43,7 @@ const MeterTable = () => {
     }
     return null;
   };
-
+  // Initial Request to fetch meters
   useEffect(() => {
     requestMetersList();
   }, []);
@@ -141,4 +144,4 @@ const MeterTable = () => {
   );
 };
 
-export default MeterTable;
+export default LandingPage;
